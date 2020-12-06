@@ -2,12 +2,14 @@
 
 $numero=$_GET["numero"];
 
-if (is_numeric($numero)) {
-    print $numero;
+if (ctype_digit($numero)) {
+    print "Este numero " .$numero. " es entero";
 }
 
-else {
-    print "Introduce un numero";
+elseif(is_numeric($numero)==TRUE) {
+    print "Este numero " .$numero. " es decimal";
 }
-
+else{
+    print "Introduce bien el numero";
+}
 ?>
