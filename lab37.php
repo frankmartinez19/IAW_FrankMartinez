@@ -28,16 +28,16 @@ else {
     print "Su direccion es " .$direccion. "</br>";
 
 }
-if (is_numeric($precio)==FALSE) {
-    print "";
+if (is_numeric($precio)==FALSE or empty($precio)) {
+    print "Introduzca bien el precio </br";
 }
 
 else {
     print "Su precio es " .$precio;
 
 }
-if (is_numeric($tamaño)==FALSE) {
-    print "";
+if (is_numeric($tamaño)==FALSE or empty($tamaño)) {
+    print "Introduzca bien el tamaño </br>";
 }
 
 else {
