@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>formulario 36</title>
+</head>
+<body>
+<p>Escriba los siguientes datos</p><br>
+<form action="lab36.php" method="GET">
+<label for="nombre"> nombre: </label>
+<input type="text" name="nombre">
+<label for="apellidos"> apellidos: </label>
+<input type="text" name="apellidos">
+<select name="edad">
+<option>Menor 20 años</option>
+<option>Entre 20 y 39</option>
+<option>Entre 40 y 59</option>
+<option>60 o más</option>
+</select><br>
+<label for="peso"> peso: </label>
+<input type="text" name="peso"> &nbsp; &nbsp; &nbsp;
+<b>Sexo
+<input type="radio" name="sexo" value="Hombre">Hombre
+<input type="radio" name="sexo" value="Mujer">Mujer
+</b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<b>Estado civil
+<input type="radio" name="estado" value="Soltero">Soltero
+<input type="radio" name="estado" value="Casado">Casado
+<input type="radio" name="estado" value="Otro">Otro
+</b>
+<p>Aficiones
+<input type="checkbox" name="aficiones" value="Cine">Cine
+<input type="checkbox" name="aficiones" value="Literatura">Literatura
+<input type="checkbox" name="aficiones" value="Tebeos">Tebeos<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input type="checkbox" name="aficiones" value="Deporte">Deporte
+<input type="checkbox" name="aficiones" value="Musica">Musica
+<input type="checkbox" name="aficiones" value="Television">Televisión
+</p>
+<input type="submit" value="enviar"/>
+<input type="Reset" value="Borrar"/>
+</form>
+</body>
+</html>
